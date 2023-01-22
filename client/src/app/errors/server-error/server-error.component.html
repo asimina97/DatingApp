@@ -1,0 +1,10 @@
+<h4>Internal Server Error -Refreshing the page will make the error away!</h4>
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <p class="font-weight-bold">Note:Not angular problem</p>
+    <p>What to do next</p>
+    <ol>
+        <li>Open chrome tools, then check the failing request in the network tab</li>
+        <li> What Api endpoints are you requesting </li>
+    </ol>
+</ng-container>
