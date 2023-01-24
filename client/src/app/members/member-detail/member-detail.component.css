@@ -1,0 +1,23 @@
+.img-thumbnail{
+    margin: 25px;
+    width:85%;
+    height: 85%;
+}
+
+.card {
+    padding-left:  25px;
+}
+
+.card-footer{
+    padding-left:  5px;
+    border-top:none;
+    background-color:white;
+}
+
+.member-tabs{
+    padding-top: 100px ;
+}
+.ngx-gallery { 
+    display: inline-block; 
+    margin-bottom: 20px;
+ }
