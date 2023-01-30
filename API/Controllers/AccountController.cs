@@ -50,7 +50,9 @@ namespace API.Controllers
             return new UserDto
             {
                 Username=user.UserName,
-                Token=_tokenService.CreateToken(user)
+                Token=_tokenService.CreateToken(user),
+                knownAs=user.KnownAs,
+                Gender=user.Gender
             };
         }
         //method to login user
@@ -75,7 +77,11 @@ namespace API.Controllers
             {
                 Username=user.UserName,
                 Token=_tokenService.CreateToken(user),
-                PhotoUrl=user.Photos.FirstOrDefault(x=>x.isMain)?.Url
+                PhotoUrl=user.Photos.FirstOrDefault(x=>x.isMain)?.Url,
+                knownAs=user.KnownAs,
+                Gender=user.Gender
+
+
             };
         }
 
